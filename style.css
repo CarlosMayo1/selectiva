@@ -177,7 +177,7 @@ p {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+/*@media (min-width: 769px) {
 	.cube-container {
 		float: left;
 		margin-left: 16.6%;
@@ -195,6 +195,66 @@ p {
 		margin: auto;
 	}
 }
+*/
+
+@media screen and (max-width: 640px){
+    .nav{
+        height: auto;
+        border-bottom:none;
+    }
+    
+    .wrapper ul{
+        list-style: none;
+        margin:auto;
+        padding:0;
+        width: 100%;
+        border: 1px solid #fff;
+    }
+    
+    .wrapper ul li {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+    }
+    
+    .wrapper li:last-child {
+        border-bottom: none;
+    }
+    
+    .wrapper li a {
+        display:block;
+        color:#fff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .wrapper li a:hover{
+        border-bottom: none;
+    }
+    
+    .row{
+        font-size:15px;
+    }
+    
+    .col-centered h1{
+        font-size:34px
+    }
+    
+    .wrapper{
+        background:
+            linear-gradient(
+                rgba(104,111,119, .5),
+                rgba(104,111,119, .5)
+            ),
+            url(img/Business-Management.jpg);
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center; 
+    }
+    
+}
+
+
 
 /* ================================= 
   Button Transitions
