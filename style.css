@@ -87,6 +87,10 @@ body{
     display: inline-block;
 }
 
+.col-4 .btn-hidden{
+    display: none;
+}
+
 
 .left-col{
     border-right: 4px solid #fff;
@@ -122,7 +126,6 @@ p {
 	line-height: 1.4;
 	margin: 0 0 1em;
 }
-
 
 
 /* ================================= 
@@ -229,7 +232,7 @@ p {
     .wrapper li a {
         display:block;
         color:#fff;
-        font-size: 14px;
+        font-size: 16px;
         text-decoration: none;
     }
 
@@ -238,24 +241,34 @@ p {
     }
     
     .row{
-        font-size:15px;
+        width:100%;
     }
     
     .col-centered h1{
-        font-size:34px
+        font-size:45px
     }
     
     .wrapper{
+        height:550px;
         background:
             linear-gradient(
                 rgba(104,111,119, .5),
                 rgba(104,111,119, .5)
             ),
             url(img/Business-Management.jpg);
-        background-size:     cover;                      /* <------ */
+        background-size:     cover;                     
         background-repeat:   no-repeat;
         background-position: center center; 
     }
+    
+    .cube-container{
+        display: none;
+    }
+    
+    .col-4 .btn-hidden{
+        display: block;
+    }
+    
     
 }
 
@@ -327,25 +340,25 @@ cube-container {
   transform: translateZ(-110px) rotateY(180deg);
 }
 
-.about{
+/*.about{
     height:0px;
     background:url(img/man-women.jpg);
     background-size:cover cover;
     text-align: center;
-}
+}*/
 
 /* ================================= 
   Information
 ==================================== */
 
-h2{
+/*h2{
     color:#FF0000;
     font-size:50px;
 }
 
 span {
     font-style: bold;
-}
+}*/
 
 
 
