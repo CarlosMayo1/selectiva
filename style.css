@@ -116,11 +116,12 @@ h2 {
 }
 
 h3 {
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: 1.25em;
 	margin-top: .85em;
 	margin-bottom: .5em;
 }
+
 p {
 	font-size: .875em;
 	line-height: 1.4;
@@ -358,7 +359,7 @@ cube-container {
 
 span {
     font-style: bold;
-} this is just another ms*/
+}*/
 
 
 
