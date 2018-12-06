@@ -11,7 +11,7 @@ body, html {
     height:100%;
 }
 
-a, article, b, div, footer, header, i, li, section, span, strong, ul {
+a, article, b, div, footer, header, i, li, section, span, strong, ol {
     box-sizing: border-box;
 }
 
@@ -95,29 +95,19 @@ Section part
 }
 
 .c_hero {
-    height:480px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     color:#fff;
     background-image:
         linear-gradient(
             rgba(104,111,119, .6),
             rgba(104,111,119, .4)
         ),
-        url('https://tutrabajoec.org/wp-content/uploads/2018/01/EJECUTIVO-DE-NEGOCIOS-1.jpg');
+        url('https://www.tutareaescolar.com/wp-content/uploads/2018/05/Un-gerente.jpg');
 }
-
-.c_hero-middle {
-    height:480px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    color:#000;
-    background-image:
-        url('https://capitalhumano.emol.com/wp-content/uploads/2017/06/perfil-%C3%A1rea-comercial.jpg');
-}
-
 .container--xsmall-middle {
    width: 50%;
 }
@@ -143,20 +133,6 @@ Section part
 }
 
 
-/*.c_hero {
-    content: "";
-    background-size:cover;
-    background-repeat: no-repeat;
-    display: block;
-    position:absolute;
-    width:100%;
-    height: 100%;
-    left:0;
-    top:0;
-    z-index:0;
-    color:#fff;
-}*/
-
 .c_hero .container {
     height:100%;
 }
@@ -172,31 +148,30 @@ Section part
 }
 
 .c_nav--main {
-    display: inline-block;
-    font-size:17px;
-    margin-top: 40px;
+    display: block;
+    font-size:30px;
+    
 }
 
 .c_nav {
-    position:absolute;
-    list-style: none;
+    display: block;
     padding:0;
+    line-height: 45px;
+    
+
 }
 
+
 .c_nav--main li {
-    display:inline-block;
     position:relative;
-    margin-right: 20px;
+    color:#fff;
+
 }
 
 .c_nav--main a {
     color:#fff;
     padding:10px 1px;
     position:relative;
-}
-
-li:hover {
-    border-bottom: 2px solid #fff;
 }
 
 .p_home .c_hero .vertical-align {
@@ -206,7 +181,7 @@ li:hover {
 }
 
 .vertical-align {
-    position:relative;
+    position: absolute;
     top:50%;
     transform:translateY(-50%);
 }
@@ -275,12 +250,13 @@ Cartas - bloques de texto
 }
 
 .card-container-column {
-    width: 550px;
-    height: 300px;
+    width:550px;
+    height:300px;
+    margin:10px;
+    box-sizing: border-boxñ
     background:#F8F8F8;
     color:#333;
     border: 1px solid #333;
-    margin:10px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 10px 10px 5px #888;
@@ -301,191 +277,6 @@ Cartas - bloques de texto
 li {
     color:#000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.p_home__trasforming .p_home__desc {
-    margin-bottom:52px;
-}
-
-.container--xsmall {
-    max-width:700px;
-}
-
-.container--small, .container--xsmall {
-    display:block;
-    margin-right: auto;
-    margin-left:auto;
-}
-
-.p_home__desc {
-    text-align: center;
-    font-size:1.2rem;
-    font-weight: 300;
-    line-height:30px;
-    padding:0;
-    color:#232c3b;
-}
-
-.slick-slider {
-    box-sizing: border-box;
-    user-select: none;
-}
-
-.slick-slider .slick-list, .slick-slider .slick-track {
-    transform: translateZ(0);
-}
-
-.slick-list {
-    overflow: hidden;
-    margin:0;
-    padding:0;
-}
-
-.slick-list, .slick-slider {
-    position:relative;
-    display: block;
-}
-
-.slick-track {
-    position:relative;
-    left:0;
-    top:0;
-    display: block;
-}
-
-.p_home__transforming__featured {
-    background-color: #f4f4f4;
-    display: flex!important;
-    margin-bottom: 30px;
-}
-
-.slick-slide {
-    float: left;
-    height:100%;
-    min-height: 1px;
-}
-
-.p_home .video-still {
-    position: relative;
-    display: block;
-}
-
-.p_home .video-still .video-still-overlay {
-    top:50%;
-    transform: translateY(-50%);
-    position: absolute;
-    margin: 0 auto;
-    width:100%;
-    color:#fff;
-    text-transform: uppercase;
-    text-align: center;
-    z-index: 100;
-    font-size: 12px;
-}
-
-.p_home .video-still .video-still-overlay .video-play-icon {
-    transition: all .3s;
-    background-image: url(https://www.wheretotonight.com/cityguide/brisbane/wp-content/uploads/sites/4/2018/02/video-play-icon.png);
-    background-size:78px;
-    width:78px;
-    height:78px;
-    display: inline-block;
-}
-
-
-.p_home .video-still img {
-    display: block;
-}
-
-img {
-    border:0;
-}
-
-.p_home__transforming__featured__copy {
-    color:#1a263a;
-    margin:50px 115px 15px 40px;
-    position: relative;
-}
-
-.p_home_transforming__featured__copy h4 {
-    font-size:22px;
-    font-weight: 600;
-    margin:0;
-}
-
-.p_home_transforming__featured__copy p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-}
-
-.p_home__transforming__featured__nav {
-    color:#232c3b;
-    font-size: 19px;
-    font-weight: 300;
-    position: absolute;
-    bottom: 30px;
-}
-*/
-/*=======================
-Blue box
-=========================*/
-
-/*.c_section--blue-gradient {
-    background: linear-gradient(26deg, #1a263a 33%, #4a8394 84%, #6ac1d0);
-}
-
-.p_home__ufb__box {
-    width:50%;
-    align-items: center;
-    justify-content: center;
-}
-
-.p_home__ufb__intro__box {
-    width:64%;
-    text-align: center;
-    font-weight: 300;
-}
-
-.p_home__ufb__intro__box__title {
-    color:#f5c252;
-    margin:0;
-    font-size: 28px;
-}
-
-.p_home__ufb__intro__box__copy {
-    color:#fff;
-    font-size: 14px;
-    line-height: 22px;
-}*/
-
-
-
-
-
-
-
-
-
 
 
 .c_section--blue-gradient {
@@ -554,160 +345,6 @@ Blue box
 
 img {
     border: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.c_header__mobile-bt {
-    display:none;
-    background: none;
-    border:none; 
-    font-size: 24px;
-    color:rgba(0,0,0,.5);
-    width:64px;
-    height:64px;
-    padding:0;
-}
-
-[class*=" se_"], [class^=se_] {
-    font-style: normal;
-    font-weight: 400;
-    font-variant:normal;
-    text-transform:none;
-    line-height: 1;
-}
-
-.c_btn, button, input[type=button], input[type=reset], input[type=submit] {
-    text-decoration: none;
-    white-space: nowrap;
-    border-radius: 2px;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: .4s ease-out;
-    transition-property: background, border;
-    position: relative;
-    overflow: hidden;
-}
-
-button, html input[type=button], input[type=reset], input[type=submit] {
-    -webkit-appearance: button;
-}
-
-button, input, opgroup, select, textarea {
-    font:inherit;
-    margin:0;
-}
-
-.se_i_menu:before {
-    content: "\e911";
-}
-
-.se_chevron-left:before {
-    content: "\e906";
-}
-
-.c_header .dropdown {
-    position: relative;
-    font-size: .867rem;
-}
-
-p {
-    display: block;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*===================
-Experimento 
-=====================*/
-header{
-    background:#2c3e50;
-    color:#fff;
-}
-
-.main {
-    background: #f2f2f2;
-    color:black;
-}
-
-.color1{
-    background: #34495e;
-    color:#fff;
-}
-
-aside{
-    background:#c0392b;
-    color:#fff;
 }
 
 
