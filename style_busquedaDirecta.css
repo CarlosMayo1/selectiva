@@ -105,7 +105,7 @@ Section part
             rgba(104,111,119, .6),
             rgba(104,111,119, .4)
         ),
-        url('https://tutrabajoec.org/wp-content/uploads/2018/01/EJECUTIVO-DE-NEGOCIOS-1.jpg');
+        url('http://www.usec.cl/thumb.php/831/369/crop/archivos/noticias/Ejecutivos-Varios.jpg');
 }
 
 .c_hero-middle {
@@ -116,6 +116,7 @@ Section part
     color:#000;
     background-image:
         url('https://capitalhumano.emol.com/wp-content/uploads/2017/06/perfil-%C3%A1rea-comercial.jpg');
+    
 }
 
 .container--xsmall-middle {
@@ -186,7 +187,7 @@ Section part
 .c_nav--main li {
     display:inline-block;
     position:relative;
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
 .c_nav--main a {
