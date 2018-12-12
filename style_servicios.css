@@ -224,17 +224,22 @@ Section part
 }
 
 .vertical-align .c_hero__title {
-    margin-top:-80px;
+    transform:translateY(60%);
+    margin-top: 120px;
+}
+
+.c_hero__title span {
+    text-decoration: underline;
+    
 }
 
 
 .p_home .c_hero__title {
-    font-size:35px;
-    line-height:45px;
+    font-size:27px;
     letter-spacing: -1.5px;
     text-shadow: none;
-    text-align: center;
-    width:70%;
+    /* text-align: center; */
+    width:50%;
 }
 
 c_hero__title {
