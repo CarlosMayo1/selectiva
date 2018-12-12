@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quienes somos || SELECTIVA</title>
+    <title>QUIENES SOMOS || SELECTIVA</title>
     <!--- Latest compiled and minified CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--- This is my CSS file -->
@@ -13,50 +13,101 @@
      <div class="wrapper">
          <header class="c_header">
              <div class="c_header__inner">
+<!--
+                <div class="toggle">
+                    <i class="fa fa-bars toggle-menu" aria-hidden="true"></i>
+                </div>
+-->
                  <div class="c_header__left">
-                     <a href="index.html"><button type="button" class="btn btn-outline-primary">Pagina Principal</button></a>
+                     <a href="index.html"><button type="button" class="btn btn-outline-primary">Página Principal</button></a>
                  </div>
                  <div class="c_header__logo-container">
-                     <img class="selectiva-logo" src="img/logo-selectiva.jpg" width="400">
+                     <img class="selectiva-logo" src="img/logo-selectiva.jpg" width="400px;">
                  </div>
                  <div class="c_header__right">
                      <div class="dropdown dropdown--login">
-                         <a class="dropdown_main-link" href="#">Iniciar sesion</a>
+                         <a class="dropdown_main-link" href="#">Iniciar sesión</a>
                      </div>
                      <div class="dropdown dropdown--signup">
-                         <a class="dropdown__main-link button" href="#"><button type="button" class="btn btn-outline-danger">Registrate</button></a>
+                         <a class="dropdown__main-link button" href="#"><button type="button" class="btn btn-outline-danger">Regístrate</button></a>
                      </div>
                  </div>
              </div>
+<!--
+             <nav class="overflow-nav">
+            <div class="overflow-nav--main">
+                <ul class="overflow-nav__links">
+                    <li class="menu__link">
+                        <a href="index.html">
+                            
+                        </a>
+                    </li>
+                    <li class="menu__link--bottom">
+                        <a href="#" class="btn btn-primary">
+                            <span class="menu__title">Registrarse</span>
+                        </a>
+                    </li>
+                    <li class="menu__link--bottom">
+                        <a href="#" class="btn btn-quaternary">
+                            <span class="menu__title">Iniciar Sesión</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+            $('.toggle-menu').click(function(){
+                $('.overflow-nav').toggle('.active');
+            })
+
+            $('.overflow-nav').click(function(){
+                $('.overflow-nav').toggle();
+            })
+
+            /*if(
+                $('.toggle-menu'.click(function(){
+                $('.overflow-nav').toggle();
+            })
+                 )
+            ) else {
+                $('.overflow-nav').click(function(){
+                $('.overflow-nav').toggle();
+            }*/
+            /*$('.overflow-nav').click(function(){
+                $('.overflow-nav').toggle()
+            })*/
+        </script>
          </header>
          <section class="c_hero">
              <div class="container">
              <ul id="menu-header-menu-spanish" class="c_nav c_nav--main">
-                <li id="menu-item" class="menu-item">
-                     <a href="contact.html">
-                         Contactenos
+               <li id="menu-item" class="menu-item">
+                     <a href="#">
+                         Muetras de Clientes
                      </a>
                  </li>
                  <li id="menu-item" class="menu-item">
-                     <a href="sevicios.html">
+                     <a href="servicios.html">
                          Servicios
                      </a>
                  </li>
-                 <li id="menu-item" class="menu-item">
-                     <a href="#">
-                         Clientes y Testimonios
+                <li id="menu-item" class="menu-item">
+                     <a href="contact.php">
+                         Contáctenos
                      </a>
                  </li>
              </ul>
              <div class="vertical-align">
-                 <h2 class="c_hero__title">SELECTIVA<span class="subtitle">(2002)</span> es una empresa de Asesoria y Consultoria en Recursos Humanos especializada en procesos de Busqueda Directa, Reclutamiento & Seleccion por competencias de Ejecutivos y Mandos Medios</h2>
+                 <h2 class="c_hero__title">SELECTIVA<span class="subtitle">(2002)</span> es una empresa de Asesoría y Consultoría en Recursos Humanos especializada en procesos de Búsqueda Directa, Reclutamiento & Selección por competencias de Ejecutivos y Mandos Medios</h2>
              </div>
          </div>
         </section>
         <section class="c_section p_home__trasforming">
             <div class="container">
                 <h2 class="c_section__title">
-                    Nuestro grupo de profesionales le brindarán una atención de Calidad a la altura de sus expectativas y necesidades.
+                    Nuestro grupo de profesionales le brindará una atención de Calidad a la altura de sus expectativas y necesidades.
                 </h2>
                 <!--<p class="p_home__desc container--xsmall">
                     contamos con una amplia Red de Contactos, Base de Datos propias y externas, plataformas en linea y baterias de pruebas modernas que nos permiten realizar la mejor ubicacion y seleccion de candidatos que el mercado laboral puede ofrecer.
@@ -94,7 +145,7 @@
                             El alto nivel de <span class="bold-text">PROFESIONALISMO</span> que caracteriza a nuestro Staff de Consultores y Colaboradores nos permite cubrir, y solucionar, las necesidades de nuestro clientes dentro de los tiempos y calidad esperados por ellos.
                         </p>
                          <p class="p_home__desc-middle container--xsmall-middle">
-                            Por ultimo, contamos con una amplia Red de Contactos, Bases de Datos propias y externas, plataformas en linea y baterias de pruebas modernas que nos permiten realizar la mejor ubicacion y seleccion de candidatos que el mercado laboral puede ofrecer.
+                            Contamos con una amplia Red de Contactos, Bases de Datos propias y externas, plataformas en línea y baterías de pruebas modernas que nos permiten realizar la mejor ubicación y selección de candidatos que el mercado laboral puede ofrecer.
                         </p>
                      </div>
                 </section>
@@ -106,10 +157,10 @@
                                     MISION
                                 </p>
                                 <p class="p_home__ufb__intro__box__copy">
-                                    Ofrecer a nuestros clientes la mejor formula comercial y el mejor servicio del mercado en contratacion y evaluacion de personal, alineados e involucrados con sus interes y objetivos.
+                                    Ofrecer a nuestros clientes la mejor fórmula comercial y el mejor servicio del mercado en contratación y evaluación de personal, alineados e involucrados con sus interes y objetivos.
                                 </p>
                                 <p class="p_home__ufb__intro__box__copy">
-                                    Ser una de las empresas mas respetadas e importantes del mercado de Recursos Humanos, especificamente en servicios de busqueda de colaboradores para asi ser reconocida por nuestros clientes como sus reales socios estretegicos.
+                                    Ser una de las empresas más respetadas e importantes del mercado de Recursos Humanos, específicamente en servicios de búsqueda de colaboradores para así ser reconocida por nuestros clientes como sus reales socios estretégicos.
                                 </p>
                             </div>
                        </div>
@@ -139,10 +190,10 @@
                                     VISION
                                 </p>
                                 <p class="p_home__ufb__intro__box__copy">
-                                    Ser una de las empresas mas respetadas del mercado y reconocida por nuestros clientes como reales socios estrategicos.
+                                    Ser una de las empresas más respetadas del mercado y reconocida por nuestros clientes como reales socios estratégicos.
                                 </p>
                                 <p class="p_home__ufb__intro__box__copy">
-                                    Ofrecer a nuestro clientes la mejor formula comerical y le mejor servicio del mercado en terminos de Asesoria & Consultoria de Recursos Humanos (Busqueda de Colaboradores), siempre alineados e involucrados con sus interes y objetivos.
+                                    Ofrecer a nuestro clientes la mejor fórmula comercial y el mejor servicio del mercado en términos de Asesoría & Consultoría de Recursos Humanos (Búsqueda de Colaboradores), siempre alineados e involucrados con sus intereses y objetivos.
                                 </p>
                             </div>
                        </div>
