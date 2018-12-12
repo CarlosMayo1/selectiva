@@ -105,7 +105,7 @@ Section part
             rgba(104,111,119, .6),
             rgba(104,111,119, .4)
         ),
-        url('http://www.usec.cl/thumb.php/831/369/crop/archivos/noticias/Ejecutivos-Varios.jpg');
+        url('../img/Ejecutivos-varios.jpg');
 }
 
 .c_hero-middle {
