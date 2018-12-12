@@ -49,8 +49,17 @@ div {
 
 .c_header__left {
     align-items: center;
-    margin-left: 62px;
+    margin-left: 64px;
 }
+
+/*=========================
+TOGGLE SECTION
+==========================*/
+
+
+
+
+
 
 .c_header__logo-container {
     display:flex;
@@ -486,81 +495,66 @@ img {
     border: 0;
 }
 
+/*==========================
+MEDIA QUERIES
+============================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.c_header__mobile-bt {
-    display:none;
-    background: none;
-    border:none; 
-    font-size: 24px;
-    color:rgba(0,0,0,.5);
-    width:64px;
-    height:64px;
-    padding:0;
+@media screen and (min-width: 680px) {
+    .overflow-nav {
+        display: none;
+    }
 }
 
-[class*=" se_"], [class^=se_] {
-    font-style: normal;
-    font-weight: 400;
-    font-variant:normal;
-    text-transform:none;
-    line-height: 1;
+
+@media screen and (max-width: 990px) {
+    .dropdown--login {
+        display: none;
+    }
 }
 
-.c_btn, button, input[type=button], input[type=reset], input[type=submit] {
-    text-decoration: none;
-    white-space: nowrap;
-    border-radius: 2px;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: .4s ease-out;
-    transition-property: background, border;
-    position: relative;
-    overflow: hidden;
+@media screen and (max-width: 840px) {
+    .c_header__left {
+        margin-left: 10px
+    }
 }
 
-button, html input[type=button], input[type=reset], input[type=submit] {
-    -webkit-appearance: button;
+
+
+@media screen and (max-width: 760px) {
+    
+    .dropdown__main-link .button {
+        margin-left:0;
+        margin-right: 2px;
+    }
+    
+    .p_home .c_hero__title {
+        font-size: 28px;
+    }
+    
+    .p_home__desc-middle {
+    font-size:16px;
+    font-weight: 300;
+    line-height:25px;
+    padding:12px;
+    color:#232c3b;
+    }
+    .c_hero-middle {
+        background-position: bottom;
+    }
+    
+  .p_home__ufb__intro__box {
+        width:100%;
+        text-align: center;
+        font-weight: 300;
+    }
+    
 }
 
-button, input, opgroup, select, textarea {
-    font:inherit;
-    margin:0;
+@media screen and (max-width: 745px) {
+    .dropdown--login {
+        display: none;
+    }
 }
-
-.se_i_menu:before {
-    content: "\e911";
-}
-
-.se_chevron-left:before {
-    content: "\e906";
-}
-
-.c_header .dropdown {
-    position: relative;
-    font-size: .867rem;
-}
-
-p {
-    display: block;
-}
-*/
-
-
-
-
 
 
 
