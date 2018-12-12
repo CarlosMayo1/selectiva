@@ -10,8 +10,99 @@ body{
     font-family: 'Karla', sans-serif;
 }
 
+body, html {
+    height:100%;
+}
+
+a, article, b, div, footer, header, i, li, section, span, strong, ul {
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+div {
+    display: block;
+}
+
 /*Header*/
 
+.c_header {
+    z-index:4;
+    display:block;
+    position:relative;
+    background:#fff;
+    box-shadow:0 1px 2px #cbcbcb;
+}
+
+.c_header__inner {
+    position: relative;
+    height:84px;
+    box-sizing: content-box;
+    z-index:5;
+    justify-content: space-between;
+}
+
+/*================
+toggle menu
+==================*/
+
+.toggle {
+    display: none;
+}
+
+
+.c_header__inner, .c_header__left {
+    display: flex;
+}
+
+.c_header__left {
+    align-items: center;
+    margin-left: 62px;
+}
+
+.c_header__logo-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+
+.c_header__right {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 62px;
+}
+
+.c_header .dropdown {
+    position:relative;
+    font-size: 15px;
+}
+
+.c_header .dropdown__main-link {
+    display:block;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.c_header .dropdown__main-link.button {
+    margin-left:28px;
+}
+
+/*===================
+
+====================*/
 
 .nav{
     height:50px;
@@ -150,7 +241,7 @@ p {
 
 /* ---- Page Elements ---- */
 
-.button {
+.button-access {
 	font-size: .8em;
 	color: #fff;
 	width: 90%;
@@ -206,10 +297,55 @@ p {
 }*/
 
 
-@media screen and (max-width: 640px){
-    .nav{
+@media screen and (max-width: 600px){
+    body {
+        font-size: 13px;
+    }
+    
+    .toggle {
+        width:63px;
+        margin-left:0;
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+
+    }
+    
+    .toggle-menu {
+        margin:21px 21px;
+        opacity: 0.5;
+    }
+     
+    .toggle-menu:hover {
+        opacity:1;
+    }
+    
+    .nav {
         height: auto;
         border-bottom:none;
+    }
+    
+    .c_header__inner {
+        position: relative;
+        height:63px;
+        box-sizing: content-box;
+        z-index:5;
+        justify-content: space-between;
+    }
+    
+
+    .c_header__logo-container {
+        display:flex;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:-1;
+    }
+    
+    .selectiva-logo {
+        width:250px;
     }
     
     .wrapper ul{
@@ -219,17 +355,17 @@ p {
         width: 100%;
         border: 1px solid #fff;
     }
-    
+
     .wrapper ul li {
         display: block;
         text-align: center;
         border-bottom: 1px solid #fff;
     }
-    
+
     .wrapper li:last-child {
         border-bottom: none;
     }
-    
+
     .wrapper li a {
         display:block;
         color:#fff;
@@ -240,15 +376,15 @@ p {
     .wrapper li a:hover{
         border-bottom: none;
     }
-    
+
     .row{
         width:100%;
     }
-    
+
     .col-centered h1{
         font-size:45px
     }
-    
+
     .wrapper{
         height:550px;
         background:
@@ -261,19 +397,23 @@ p {
         background-repeat:   no-repeat;
         background-position: center center; 
     }
-    
+
     .cube-container{
         display: none;
     }
-    
+
     .col-4 .btn-hidden{
         display: block;
     }
-    
-    
+
+
 }
 
-
+@media (max-width:768px) {
+    .toggle {
+        display: block;
+    }
+}
 
 
 /* ================================= 
