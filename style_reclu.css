@@ -189,13 +189,18 @@ Section part
     margin-right: 20px;
 }
 
+ol li {
+    font-weight: 300;
+    font-size:18px;
+}
+
 .c_nav--main a {
     color:#fff;
     padding:10px 1px;
     position:relative;
 }
 
-li:hover {
+.menu-item:hover {
     border-bottom: 2px solid #fff;
 }
 
