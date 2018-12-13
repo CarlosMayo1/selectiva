@@ -195,7 +195,7 @@ Section part
     position:relative;
 }
 
-li:hover {
+.menu-item:hover {
     border-bottom: 2px solid #fff;
 }
 
